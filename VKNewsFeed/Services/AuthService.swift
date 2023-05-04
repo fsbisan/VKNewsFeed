@@ -58,6 +58,12 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     private let appId = "51632341"
     private let vkSdk: VKSdk
     
+    weak var delegate: AuthServiceDelegate?
+    
+    var token: String? {
+        return VKSdk.accessToken().accessToken
+    }
+    
     private override init() {
         vkSdk = VKSdk.initialize(withAppId: appId)
         super.init()
@@ -66,5 +72,4 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
         vkSdk.uiDelegate = self
     }
     
-    weak var delegate: AuthServiceDelegate?
 }
