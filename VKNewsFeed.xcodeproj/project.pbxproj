@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46D58DAFF7092BA3FEB685DD /* Pods_VKNewsFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5EF8848E217345A77B183F8 /* Pods_VKNewsFeed.framework */; };
+		925A0DD82A06A20500B03FB2 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A0DD72A06A20500B03FB2 /* FeedResponse.swift */; };
+		925A0DDA2A076DC000B03FB2 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A0DD92A076DC000B03FB2 /* NetworkDataFetcher.swift */; };
 		9276796F2A0413710035D1C7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276796E2A0413710035D1C7 /* NetworkService.swift */; };
 		927679712A0415010035D1C7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927679702A0415010035D1C7 /* API.swift */; };
 		928448982A02283B00678A78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928448972A02283B00678A78 /* AuthService.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		4C9291320C3840F3DB73A166 /* Pods-VKNewsFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKNewsFeed.debug.xcconfig"; path = "Target Support Files/Pods-VKNewsFeed/Pods-VKNewsFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		925A0DD72A06A20500B03FB2 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		925A0DD92A076DC000B03FB2 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		9276796E2A0413710035D1C7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		927679702A0415010035D1C7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		928448972A02283B00678A78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -57,11 +61,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		925A0DD62A06A1F600B03FB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				925A0DD72A06A20500B03FB2 /* FeedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		928448992A02284600678A78 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				925A0DD62A06A1F600B03FB2 /* Models */,
 				928448972A02283B00678A78 /* AuthService.swift */,
 				9276796E2A0413710035D1C7 /* NetworkService.swift */,
+				925A0DD92A076DC000B03FB2 /* NetworkDataFetcher.swift */,
 				927679702A0415010035D1C7 /* API.swift */,
 			);
 			path = Services;
@@ -222,11 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925A0DD82A06A20500B03FB2 /* FeedResponse.swift in Sources */,
 				929F65612A00FF2C003EC459 /* AuthViewController.swift in Sources */,
 				929F655D2A00FF2C003EC459 /* AppDelegate.swift in Sources */,
 				9284489D2A02760800678A78 /* FeedViewController.swift in Sources */,
 				929F655F2A00FF2C003EC459 /* SceneDelegate.swift in Sources */,
 				9276796F2A0413710035D1C7 /* NetworkService.swift in Sources */,
+				925A0DDA2A076DC000B03FB2 /* NetworkDataFetcher.swift in Sources */,
 				928448982A02283B00678A78 /* AuthService.swift in Sources */,
 				927679712A0415010035D1C7 /* API.swift in Sources */,
 			);
